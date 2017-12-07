@@ -1,15 +1,5 @@
-# Microsoft Face API: Python SDK
-This repo contains the Python SDK for the Microsoft Face API, an offering within [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/), formerly known as Project Oxford.
-
-* [Learn about the Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)
-* [Read the documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview)
-* [More SDKs & Samples](https://azure.microsoft.com/en-us/resources/samples/?api=face&sort=0&service=cognitive-services&term=face)
-
-## Getting started
-
-Install the module using [pip](https://pypi.python.org/pypi/pip/):
-
-```bash
+Ubuntu 14.04:
+sudo apt-get install python-pip
 pip install cognitive_face
 ```
 
@@ -29,24 +19,6 @@ result = CF.face.detect(img_url)
 print result
 ```
 
-### Installing from the source code
-
-```bash
-python setup.py install
-```
-
-### Running the unit tests
-
-To run the tests you will need a valid subscription. You can get one [here](https://azure.microsoft.com/en-gb/try/cognitive-services/?api=face-api).
-
-1. Copy `cognitive_face/tests/config.sample.py`  into `cognitive_face/tests/config.py`.
-1. Change the `KEY` and `BASE_URL` parameters to your own subscription's API key and endpoint.
-1. Run the following:
-
-```bash
-python setup.py test
-```
-
 ## Running the sample
 
 A sample desktop application is also provided.
@@ -57,7 +29,14 @@ To run it, install the following prerequisites:
 - [wxPython 3.0.2](https://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/) (version 4 is **not** currently supported)
 
 Then run the following:
-
+Install wxpython3.0:
+Down load source here
+https://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/wxPython-src-3.0.2.0.tar.bz2/download
+sudo apt-get install gtk+-2.0
+Extract wxPython-src-3.0.2.0.tar.bz2 and build by
+./configure
+make
+sudo make install
 ```bash
 git clone https://github.com/Microsoft/Cognitive-Face-Python.git
 cd Cognitive-Face-Python
