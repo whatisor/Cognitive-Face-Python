@@ -32,14 +32,23 @@ To run it, install the following prerequisites:
 - [wxPython 3.0.2](https://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/) (version 4 is **not** currently supported)
 
 Then run the following:
+
 Install wxpython3.0:
+
 Down load source here
+
 https://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/wxPython-src-3.0.2.0.tar.bz2/download
+
 sudo apt-get install gtk+-2.0
+
 Extract wxPython-src-3.0.2.0.tar.bz2 and build by
+
 ./configure
+
 make
+
 sudo make install
+
 ```bash
 git clone https://github.com/Microsoft/Cognitive-Face-Python.git
 cd Cognitive-Face-Python
